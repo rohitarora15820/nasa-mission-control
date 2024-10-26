@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'Futurium';
+  src: url('../fonts/Futurium-Regular.woff2') format('woff2'),
+    url('../fonts/Futurium-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('../fonts/JetBrainsMono-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-body: 'Futurium', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body,
+.Arwes-root-0-1-1,
+button {
+  font-family: var(--font-body) !important;
+}
+
+svg[class^='Logo-root'] + span {
+  font-family: var(--font-body) !important;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+a[class^='Header-link'] {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+a[class^='Header-link'] > i {
+  margin: 0 !important;
+}
+
+.header-logo {
+  display: flex;
+}
+
+div[class^='ArwesSounds(Header)-children'] div[class^='Centered-root'] {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 2 !important;
+}
+
+form {
+  align-items: center !important;
+  gap: 14px !important;
+  margin: 32px auto 0 auto !important;
+  display: grid !important;
+  width: 64%;
+}
+
+form label {
+  line-height: 1 !important;
+  width: fit-content;
+  margin-block-start: 2px !important;
+}
+
+form span {
+  margin: 24px auto 8px auto;
+  grid-column: 1 / 3;
+}
+
+input,
+select {
+  font-family: var(--font-mono) !important;
+  font-size: 15px !important;
+  padding: 4px 8px;
+  height: 44px;
+  color: #01819a;
+  border-radius: 4px !important;
+  border: 1px solid #fefefe64;
+}
+
+div[class^='Table-root'] {
+  margin-block-start: 24px;
+}
+
+div[class^='Table-root'],
+div[class^='Table-root'] table,
+div[class^='Table-root'] thead,
+div[class^='Table-root'] tbody {
+  font-family: var(--font-mono) !important;
+}
+
+footer {
+  margin-block-start: 2.4rem;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; /* Remove default arrow */
+  /* TODO: Add custom arrow */
+  /* background-image: url(...);   Add custom arrow */
+}
