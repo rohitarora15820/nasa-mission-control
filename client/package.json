@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "BUILD_PATH=../server/public react-scripts build",
+    "build": "cross-env BUILD_PATH=../server/public react-scripts build",
     "eject": "react-scripts eject"
   },
   "keywords": [
