@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/rohitarora15820/nasa-mission-control#readme",
   "dependencies": {
-    "cross-env": "^7.0.3"
+    "cross-env": "^7.0.3",
+    "nasa_project": "file:"
   }
 }
