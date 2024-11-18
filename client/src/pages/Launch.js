@@ -6,8 +6,8 @@ const Launch = ({ planets, entered, submitLaunch, isPendingLaunch }) => {
   const selectorBody = useMemo(
     () =>
       planets?.map((planet) => (
-        <option value={planet.kepler_name} key={planet.kepler_name}>
-          {planet.kepler_name}
+        <option value={planet.keplerName} key={planet.keplerName}>
+          {planet.keplerName}
         </option>
       )),
     [planets]
